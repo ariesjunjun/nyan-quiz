@@ -97,6 +97,8 @@ export default function QuizClient({
 <Image
     src="/icon.svg" // アイコン画像のパス
     alt="タイトルアイコン"
+    width={50}   // ここに幅（ピクセル）を数値で指定
+    height={50}  // ここに高さ（ピクセル）を数値で指定
     style={{
       width: "32px",  // お好みでサイズ調整
       height: "32px",
@@ -134,6 +136,8 @@ export default function QuizClient({
     <Image
       src={question.image}
       alt="問題に関連する画像"
+      width={100}    // 適切な幅を指定
+      height={100}   // 適切な高さを指定
       style={{
         display: "block",
         margin: "0 auto",

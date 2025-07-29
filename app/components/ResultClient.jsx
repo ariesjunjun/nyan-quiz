@@ -81,6 +81,8 @@ const getResultTitle = (percentage) => {
       <Image
   src={getResultImage(percentage)}
   alt="結果画像"
+  width={500}   // ここに幅（ピクセル）を数値で指定
+  height={500}  // ここに高さ（ピクセル）を数値で指定
   style={{
     display: "block",              // センター揃え
     margin: "0 auto 1.5rem",       // 下に余白
