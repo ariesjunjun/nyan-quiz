@@ -84,11 +84,13 @@ const getResultTitle = (percentage) => {
   width={500}   // ここに幅（ピクセル）を数値で指定
   height={500}  // ここに高さ（ピクセル）を数値で指定
   style={{
-    display: "block",              // センター揃え
-    margin: "0 auto 1.5rem",       // 下に余白
-    width: "80%",                  // レスポンシブ対応
-    maxWidth: "400px",             // 最大サイズ制限
-    height: "auto",
+    display: "block",
+    margin: "0 auto 1.5rem",
+    width: "300px",     // ← 固定サイズにする（正方形）
+    height: "300px",    // ← 高さも指定
+    borderRadius: "50%",
+    objectFit: "cover",  // ← はみ出し防止
+    backgroundColor: "#fff",
   }}
 />
 
