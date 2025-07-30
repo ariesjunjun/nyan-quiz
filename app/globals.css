@@ -11,6 +11,7 @@
 /* 使用例 */
 body {
   margin: 0;
+  background-image: url("/haikei.jpg"); /* 修正ポイント */
   background-color: #fdf8ea;
   color: var(--main-text);
 }
