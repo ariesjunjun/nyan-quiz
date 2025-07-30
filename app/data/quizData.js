@@ -1,6 +1,6 @@
 export const quizData = [
     {
-      title: "第１歩：保護猫ってどんな猫？",
+      title: "第１歩：保護猫って何？",
       intro: "ぼくの仲間たちのこと\nちゃんと知ってニャ！",
       questions: [
         {
@@ -28,7 +28,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第２歩：譲渡会に行ってみよう",
+      title: "第２歩：譲渡会へGO！",
       intro: "譲渡会は\nにぎやかで楽しい場所だニャ！",
       questions: [
         {
