@@ -30,12 +30,14 @@ export default function QuizPage({ params }) {
   const question = chapter.questions[questionIndexInChapter];
 
   return (
-    <QuizClient
-      question={question}
-      questionNumber={questionNumber}
-      totalQuestions={totalQuestions}
-      chapterTitle={chapter.title}
-      chapterIntro={chapter.intro}
-    />
+     <div style={{ marginBottom: "4rem" }}> {/* フッターの高さ分マージン確保 */}
+      <QuizClient
+        question={question}
+        questionNumber={questionNumber}
+        totalQuestions={totalQuestions}
+        chapterTitle={chapter.title}
+        chapterIntro={chapter.intro}
+      />
+    </div>
   );
 }

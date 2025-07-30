@@ -62,11 +62,13 @@ export default function Header({ onReset }) {
       </p>
 
       <p style={{
-        color: "#000",
-        fontSize: "1rem",
-        margin: 0 }}>
-        クイズに答えて保護猫譲渡ミッションをクリアせよ！
-      </p>
+  color: "#000",
+  fontSize: "1rem",
+  margin: 0
+}}>
+  クイズに答えて<br />
+  保護猫譲渡ミッションをクリアせよ！
+</p>
     </header>
   );
 }

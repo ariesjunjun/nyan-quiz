@@ -2,6 +2,7 @@
 import SNSShareButtons from "@/app/components/SNSShareButtons";
 import ResultClient from "../../components/ResultClient";
 import { Suspense } from "react";
+import Footer from "@/app/components/Footer";
 
 export default function ResultPage() {
   return (
@@ -10,12 +11,17 @@ export default function ResultPage() {
       <ResultClient />
     </Suspense>
 <hr/>
-      <div style={{ textAlign: "center", marginTop: "2rem" }}>
+      <div style={{
+        textAlign: "center",
+        marginTop: "2rem",
+        marginBottom: "3rem",
+        }}>
         <p style={{ fontWeight: "bold", marginBottom: "1rem" }}>
         ＼ SNSで結果をシェアしよう ／
         </p>
         <SNSShareButtons />
       </div>
+      <Footer/>
     </>
   );
 }

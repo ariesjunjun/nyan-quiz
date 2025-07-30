@@ -83,6 +83,7 @@ export default function QuizClient({
           marginBottom: "2rem",
           textAlign: "center",
           flexShrink: 0,
+          minHeight: "180px",
         }}
       >
         <div
@@ -100,13 +101,13 @@ export default function QuizClient({
     width={50}   // ここに幅（ピクセル）を数値で指定
     height={50}  // ここに高さ（ピクセル）を数値で指定
     style={{
-      width: "32px",  // お好みでサイズ調整
-      height: "32px",
+      width: "20px",  // お好みでサイズ調整
+      height: "20px",
     }}
   />
   <h1
     style={{
-      fontSize: "1.875rem",
+      fontSize: "1.4rem",
       fontWeight: "800",
       color: "#4a2710",
       margin: 0, // 不要なマージンをなくす
@@ -121,6 +122,7 @@ export default function QuizClient({
             fontSize: "1.125rem", // 約18px
             color: "#4b5563",     // 灰色
             margin: 0,
+            whiteSpace: "pre-line",
           }}
         >
           {chapterIntro}
@@ -141,7 +143,7 @@ export default function QuizClient({
       style={{
         display: "block",
         margin: "0 auto",
-        maxWidth: "10%",
+        maxWidth: "20%",
         height: "auto",
         borderRadius: "0.5rem",
       }}

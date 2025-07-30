@@ -41,6 +41,7 @@ export default function SNSShareButtons({ url, title }) {
   };
 
   return (
+    <>
     <div
       style={{
         display: "flex",
@@ -84,5 +85,7 @@ export default function SNSShareButtons({ url, title }) {
         LINE
       </a>
     </div>
+
+</>
   );
 }

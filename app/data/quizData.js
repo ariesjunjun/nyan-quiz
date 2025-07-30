@@ -1,7 +1,7 @@
 export const quizData = [
     {
       title: "第１歩：保護猫ってどんな猫？",
-      intro: "ぼくの仲間たちのこと、ちゃんと知ってニャ！",
+      intro: "ぼくの仲間たちのこと\nちゃんと知ってニャ！",
       questions: [
         {
           question: "保護猫とはどんな猫を指す？",
@@ -29,7 +29,7 @@ export const quizData = [
     },
     {
       title: "第２歩：譲渡会に行ってみよう",
-      intro: "譲渡会はにぎやかで楽しい場所だニャ！",
+      intro: "譲渡会は\nにぎやかで楽しい場所だニャ！",
       questions: [
         {
           question: "譲渡会に入店するとき、里親希望者は何をする？",
@@ -57,7 +57,7 @@ export const quizData = [
     },
     {
       title: "第3歩：申し込み・審査",
-      intro: "ちゃんとした家族かどうか、見極めるニャ！",
+      intro: "ちゃんとした家族かどうか\n見極めるニャ！",
       questions: [
         {
           question: "里親希望者がすぐ猫を連れて帰れない理由は？",
@@ -74,7 +74,7 @@ export const quizData = [
     },
     {
       title: "第４歩：トライアル生活",
-      intro: "ここからが本当のスタートなのニャ",
+      intro: "ここからが\n本当のスタートなのニャ",
       questions: [
         {
           question: "トライアル期間は最低でもどれくらい？",
@@ -97,7 +97,7 @@ export const quizData = [
     },
     {
       title: "第５歩：本譲渡",
-      intro: "いよいよ本当の家族になる時ニャ！",
+      intro: "いよいよ本当の家族に\nなる時ニャ！",
       questions: [
         {
           question: "正式譲渡のときに必要な書類は？",
@@ -114,7 +114,7 @@ export const quizData = [
     },
     {
       title: "第６歩：譲渡条件",
-      intro: "ボクたちの安全のためにもルールがあるのニャ",
+      intro: "ボクたちの安全のためにも\nルールがあるのニャ",
       questions: [
         {
           question: "譲渡条件に含まれていないのは？",
@@ -131,7 +131,7 @@ export const quizData = [
     },
     {
       title: "第７歩：アフターフォロー",
-      intro: "譲渡して終わりじゃないのニャ！安心して暮らせるように見守ってくれるニャ",
+      intro: "譲渡して終わりじゃないのニャ！\n安心して暮らせるように\n見守ってくれるニャ",
       questions: [
         {
           question: "譲渡後のアフターフォローに含まれないのは？",
@@ -148,7 +148,7 @@ export const quizData = [
     },
     {
       title: "第８歩：その他の疑問",
-      intro: "よくある質問にも答えておくニャ！",
+      intro: "よくある質問にも\n答えておくニャ！",
       questions: [
         {
           question: "譲渡会で猫をその日に連れて帰れる？",

@@ -1,5 +1,6 @@
 import Quiz from "./components/Quiz";
 import Image from 'next/image';
+import FooterFixed from "./components/FooterFixed";
 
 export default function Home() {
   return (
@@ -42,6 +43,9 @@ export default function Home() {
 </div>
 
       <Quiz />
+
+       {/* TOPページだけ固定フッター */}
+       <FooterFixed />
     </>
   );
 }
