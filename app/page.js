@@ -5,6 +5,9 @@ import FooterFixed from "./components/FooterFixed";
 export default function Home() {
   return (
     <>
+
+<Quiz />
+
       <div
   style={{
     display: "flex",
@@ -42,7 +45,6 @@ export default function Home() {
   </div>
 </div>
 
-      <Quiz />
 
        {/* TOPページだけ固定フッター */}
        <FooterFixed />
