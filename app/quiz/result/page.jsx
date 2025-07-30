@@ -2,9 +2,12 @@
 import SNSShareButtons from "@/app/components/SNSShareButtons";
 import ResultClient from "../../components/ResultClient";
 import { Suspense } from "react";
-import Footer from "@/app/components/Footer";
+import FooterFixed from "@/app/components/FooterFixed";
+import SNSShareWrapper from "@/app/components/SNSShareWrapper";
 
 export default function ResultPage() {
+  const title = "この記事をシェアしよう";
+
   return (
     <>
       <Suspense fallback={<div>読み込み中...</div>}>
@@ -19,9 +22,9 @@ export default function ResultPage() {
         <p style={{ fontWeight: "bold", marginBottom: "1rem" }}>
         ＼ SNSで結果をシェアしよう ／
         </p>
-        <SNSShareButtons />
+        <SNSShareWrapper title={title} />
       </div>
-      <Footer/>
+      <FooterFixed/>
     </>
   );
 }

@@ -84,7 +84,7 @@ export default function QuizClient({
           marginBottom: "2rem",
           textAlign: "center",
           flexShrink: 0,
-          minHeight: "190px",
+          minHeight: "220px",
         }}
       >
         <div

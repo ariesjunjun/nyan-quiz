@@ -1,6 +1,6 @@
 import { quizData } from "../../data/quizData"; // 適切なパスに変更してください
 import QuizClient from "../../components/QuizClient";
-import Footer from "@/app/components/Footer";
+import FooterFixed from "@/app/components/FooterFixed";
 
 const allQuestions = quizData.flatMap(chapter => chapter.questions);
 
@@ -42,7 +42,7 @@ export default function QuizPage({ params }) {
       />
     </div>
 
-    <Footer/>
+    <FooterFixed/>
     </>
   );
 }
