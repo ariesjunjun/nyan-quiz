@@ -1,6 +1,6 @@
 export const quizData = [
     {
-      title: "第１歩：保護猫って何？",
+      title: "保護猫ってな〜に？",
       intro: "ぼくの仲間たちのこと\nちゃんと知ってニャ！",
       questions: [
         {
@@ -28,7 +28,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第２歩：譲渡会へGO！",
+      title: "譲渡会へ行こう",
       intro: "譲渡会は\nにぎやかで楽しい場所だニャ！",
       questions: [
         {
@@ -56,7 +56,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第3歩：申し込み・審査",
+      title: "申し込み・審査",
       intro: "ちゃんとした家族かどうか\n見極めるニャ！",
       questions: [
         {
@@ -73,7 +73,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第４歩：トライアル生活",
+      title: "トライアル生活",
       intro: "ここからが\n本当のスタートなのニャ",
       questions: [
         {
@@ -96,7 +96,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第５歩：本譲渡",
+      title: "本譲渡",
       intro: "いよいよ本当の家族に\nなる時ニャ！",
       questions: [
         {
@@ -113,7 +113,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第６歩：譲渡条件",
+      title: "譲渡条件",
       intro: "ボクたちの安全のためにも\nルールがあるのニャ",
       questions: [
         {
@@ -130,7 +130,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第７歩：アフターフォロー",
+      title: "アフターフォロー",
       intro: "譲渡して終わりじゃないのニャ！\n安心して暮らせるように\n見守ってくれるニャ",
       questions: [
         {
@@ -147,7 +147,7 @@ export const quizData = [
       ],
     },
     {
-      title: "第８歩：その他の疑問",
+      title: "その他の疑問",
       intro: "よくある質問にも\n答えておくニャ！",
       questions: [
         {
