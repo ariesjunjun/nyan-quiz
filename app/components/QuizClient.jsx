@@ -6,6 +6,7 @@ import { quizData } from "../data/quizData";
 import { M_PLUS_Rounded_1c } from 'next/font/google';
 import Image from 'next/image';
 
+
 // Googleフォントの読み込み（日本語は 'japanese' ではなく 'latin-ext' を使用）
 const mPlusRounded = M_PLUS_Rounded_1c({
   subsets: ['latin', 'latin-ext'],
@@ -243,6 +244,7 @@ export default function QuizClient({
           ))}
         </ul>
       </main>
+
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { quizData } from "../../data/quizData"; // 適切なパスに変更してください
 import QuizClient from "../../components/QuizClient";
+import Footer from "@/app/components/Footer";
 
 const allQuestions = quizData.flatMap(chapter => chapter.questions);
 
@@ -30,6 +31,7 @@ export default function QuizPage({ params }) {
   const question = chapter.questions[questionIndexInChapter];
 
   return (
+    <>
      <div style={{ marginBottom: "4rem" }}> {/* フッターの高さ分マージン確保 */}
       <QuizClient
         question={question}
@@ -39,5 +41,8 @@ export default function QuizPage({ params }) {
         chapterIntro={chapter.intro}
       />
     </div>
+
+    <Footer/>
+    </>
   );
 }
