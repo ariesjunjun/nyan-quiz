@@ -1,7 +1,6 @@
 import Quiz from "./components/Quiz";
-import Image from 'next/image';
-import FooterFixed from "./components/FooterFixed";
 import { Topillust } from "./components/Topillust";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,8 +11,8 @@ export default function Home() {
 <Topillust/>
 
 
-       {/* TOPページだけ固定フッター */}
-       <FooterFixed />
+
+       <Footer/>
     </>
   );
 }
