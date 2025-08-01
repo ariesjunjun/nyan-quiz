@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import { quizData } from "../data/quizData";
 import { M_PLUS_Rounded_1c } from "next/font/google";
 import Image from "next/image";
-import Footer from "./Footer";
 
 // Googleフォントの読み込み（日本語は 'japanese' ではなく 'latin-ext' を使用）
 const mPlusRounded = M_PLUS_Rounded_1c({
@@ -150,7 +149,7 @@ export default function QuizClient({
           paddingBottom: "2rem",
           paddingLeft: "2rem",
           paddingRight: "2rem",
-          paddingTop: "1rem",
+          paddingTop: "2rem",
           flexGrow: 1,
           display: "flex",
           flexDirection: "column",
@@ -252,7 +251,6 @@ export default function QuizClient({
           ))}
         </ul>
       </main>
-      <Footer/>
     </div>
   );
 }

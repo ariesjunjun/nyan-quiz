@@ -42,7 +42,6 @@ export default function QuizPage({ params }) {
       />
     </div>
 
-    <FooterFixed/>
     </>
   );
 }

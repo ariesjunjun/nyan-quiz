@@ -131,7 +131,7 @@ export const quizData = [
     },
     {
       title: "アフターフォロー",
-      intro: "譲渡して終わりじゃないのニャ！\n安心して暮らせるように\n見守ってくれるニャ",
+      intro: "譲渡して終わりじゃないのニャ！\n何かあったら相談ニャ",
       questions: [
         {
           question: "譲渡後のアフターフォローに含まれないのは？",
@@ -158,8 +158,8 @@ export const quizData = [
         },
         {
           question: "譲渡会は予約が必要？",
-          options: ["必要", "不要"],
-          answer: 0,
+          options: ["必要", "不要", "譲渡会による"],
+          answer: 3,
           image: "/neko/12.svg",
         },
       ],

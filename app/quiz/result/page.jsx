@@ -2,7 +2,6 @@
 import SNSShareButtons from "@/app/components/SNSShareButtons";
 import ResultClient from "../../components/ResultClient";
 import { Suspense } from "react";
-import FooterFixed from "@/app/components/FooterFixed";
 import SNSShareWrapper from "@/app/components/SNSShareWrapper";
 
 export default function ResultPage() {
@@ -24,7 +23,7 @@ export default function ResultPage() {
         </p>
         <SNSShareWrapper title={title} />
       </div>
-      <FooterFixed/>
+
     </>
   );
 }

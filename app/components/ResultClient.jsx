@@ -3,8 +3,18 @@
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from 'next/image';
+import React from "react";
 
 export default function ResultClient() {
+
+  const formatWithLineBreaks = (text) =>
+    text.split("\n").map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        <br />
+      </React.Fragment>
+    ));
+
   const searchParams = useSearchParams();
   const score = parseInt(searchParams.get("score") || "0", 10);
   const total = parseInt(searchParams.get("total") || "1", 10);
@@ -12,18 +22,18 @@ export default function ResultClient() {
   const percentage = Math.round((score / total) * 100);
 
   const getResultMessage = (percentage) => {
-    if (percentage === 100) return "パーフェクト！猫博士だニャ！";
-    if (percentage >= 80) return "すごいニャ！よく知ってるね！";
-    if (percentage >= 50) return "まあまあニャ！もっと知ってほしいニャ～";
-    return "まだまだニャ。知識をつけてまた来てニャン";
+    if (percentage === 100) return "パーフェクト！\n猫博士だニャ！";
+    if (percentage >= 80) return "すごいニャ！\nよく知ってるね！";
+    if (percentage >= 50) return "まあまあニャ！\nもっと知ってほしいニャ～";
+    return "まだまだニャ。\n知識をつけてまた来てニャン";
   };
 
   // ★ 画像上の結果タイトルメッセージを返す関数を追加
 const getResultTitle = (percentage) => {
-  if (percentage === 100) return "🎉 ミッションクリア！譲渡成功！";
-  if (percentage >= 80) return "👏 惜しいニャ！譲渡成功ならず・・・";
-  if (percentage >= 50) return "😸 譲渡への道はあと一歩ニャ";
-  return "😿 ミッション失敗！諦めずに再挑戦してニャ！";
+  if (percentage === 100) return "🎉 ミッションクリア！\n譲渡成功！";
+  if (percentage >= 80) return "👏 惜しいニャ！\n譲渡成功ならず・・・";
+  if (percentage >= 50) return "😸 譲渡への道は\nあと一歩ニャ";
+  return "😿 ミッション失敗！\n諦めずに再挑戦してニャ！";
 };
 
   // ★ 結果に応じた画像パスを決める
@@ -67,14 +77,14 @@ const getResultTitle = (percentage) => {
 
 
       {/* 画像の上にタイトル表示 */}
-<h2
+      <h2
   style={{
     fontSize: "1.25rem",
     fontWeight: "bold",
     marginBottom: "0.5rem",
   }}
 >
-  {getResultTitle(percentage)}
+  {formatWithLineBreaks(getResultTitle(percentage))}
 </h2>
 
       {/* ★ 結果画像の表示 */}
@@ -105,9 +115,10 @@ const getResultTitle = (percentage) => {
 </div>
 
 
-      <p style={{ fontSize: "1.125rem", marginBottom: "1.5rem" }}>
-        {getResultMessage(percentage)}
-      </p>
+<p style={{ fontSize: "1.125rem", marginBottom: "1.5rem" }}>
+  {formatWithLineBreaks(getResultMessage(percentage))}
+</p>
+
 
       <Link href="/">
         <button
